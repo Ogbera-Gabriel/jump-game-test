@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumping Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="game-intro">
+          <img src="#" alt="" class="logo-img" />
+          <br />
+          <button id="start-button">Start Game</button>
+          <br />
+          <p class="instructions">
+            instructions for game
+          </p>
+        </div>
+  
+        <div id="game-container">
+          <div>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">3</span></p>
+          </div>
+          <div id="game-screen"></div>
+        </div>
+  
+       
+        <div id="game-end">
+          <img src="#" alt="gameOver" class="endGame-img" />
+          <br />
+          <button id="restart-button">Try Again!</button>
+        </div>
+      </main>
+      
+      <script type="text/javascript" src="docs/scripts/enemy.js"></script>
+      <script type="text/javascript" src="docs/scripts/player.js"></script>
+      <script type="text/javascript" src="docs/scripts/game.js"></script>
+      <script type="text/javascript" src="docs/scripts/script.js"></script>
+</body>
+</html>
