@@ -28,9 +28,21 @@ class Game {
 
         this.gameIsOver = false;
 
+        this.backgroundMusic = document.createElement('audio');
+        this.backgroundMusic.src = './docs/audio/playing-music.mp3';
+        this.backgroundMusic.volume = 0.5;
+        this.gameScreen.appendChild(this.backgroundMusic);
+
+        this.endgameMusic = document.createElement('audio');
+        this.endgameMusic.src = './docs/audio/GameOver.mp3';
+        this.gameEndScreen.appendChild(this.endgameMusic);
+
+        this.damageSound = new Audio('docs/audio/Damaged.mp3');
+
     }
 
     start() {
+        this.backgroundMusic.play();
 
         const updateTimer = () => {
             this.timer++;
@@ -39,9 +51,7 @@ class Game {
         setInterval(updateTimer, 1000);
 
         this.startScreen.style.display = 'none';
-
         this.gameScreen.style.display = 'block';
-
         this.gameLoop();
     }
 
@@ -77,6 +87,7 @@ class Game {
                     obstacle.element.remove(); 
                     this.obstacles.splice(i, 1);
                     this.lives--;
+                    this.damageSound.play();
     
                     if (this.lives === 0) {
                         this.endGame();
@@ -120,9 +131,12 @@ class Game {
         }); 
 
         this.gameIsOver = true;
-
         this.gameScreen.style.display = 'none';
-
         this.gameEndScreen.style.display = 'block';
+
+        this.backgroundMusic.pause();
+        this.backgroundMusic = null;
+
+        this.endgameMusic.play();
     }
 }
