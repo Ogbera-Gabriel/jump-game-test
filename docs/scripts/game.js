@@ -44,6 +44,7 @@ class Game {
     start() {
         this.backgroundMusic.play();
         this.backgroundMusic.loop = true;
+        this.backgroundMusic.volume = 0.3;
 
         const updateTimer = () => {
             this.timer++;

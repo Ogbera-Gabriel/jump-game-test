@@ -2,12 +2,26 @@ window.onload = function () {
     const startButton = document.getElementById('start-button')
     const restartButton = document.getElementById('restart-button')
     const introMusic = document.getElementById('introMusic');
+    const musicToggleButton = document.getElementById('music-toggle-button');
 
     let game;
 
-
+    introMusic.volume = 0.5;
     
-    introMusic.play()
+    musicToggleButton.addEventListener('click', function() {
+        if (introMusic.paused) {
+            introMusic.play().catch(error => {
+                console.error('Failed to play audio:', error);
+            });
+            musicToggleButton.textContent = '🔇';
+        } else {
+            introMusic.pause();
+            musicToggleButton.textContent = '🔊';
+        }
+    });
+
+    introMusic.play();
+
     startButton.addEventListener('click', function() {
         startGame();
         introMusic.pause();
