@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <div id="game-intro">
+        <section id="game-intro">
           <img src="./docs/images/start-game.png" alt="startGame" class="logo-img" />
           <br />
           <button id="start-button">Start Game</button>
@@ -18,7 +18,11 @@
           <p class="instructions">
             Use directional key for movement. Hold 'Up-key' or 'Space-Bar' to hover for a short time. Avoid the enemies. Good Luck.
           </p>
-        </div>
+          <audio id="introMusic" loop autoplay>
+            <source src="./docs/audio/BackGroundMusic.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </section>
   
         
         <section id="game-screen">

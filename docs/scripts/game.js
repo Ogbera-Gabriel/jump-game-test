@@ -43,6 +43,7 @@ class Game {
 
     start() {
         this.backgroundMusic.play();
+        this.backgroundMusic.loop = true;
 
         const updateTimer = () => {
             this.timer++;

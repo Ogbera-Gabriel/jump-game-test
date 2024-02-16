@@ -1,12 +1,15 @@
 window.onload = function () {
     const startButton = document.getElementById('start-button')
     const restartButton = document.getElementById('restart-button')
+    const introMusic = document.getElementById('introMusic');
 
     let game;
 
 
+
     startButton.addEventListener('click', function() {
         startGame();
+        introMusic.pause();
     });
 
     restartButton.addEventListener('click', function () {
