@@ -9,8 +9,8 @@ class Game {
             50,
             450,
             100,
-            185,
-            './docs/images/cool-roboto.png'
+            150,
+            './docs/images/player-1.gif'
         );
 
         this.width = 1900;

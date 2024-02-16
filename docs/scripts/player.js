@@ -32,10 +32,10 @@ class Player {
         this.left += this.directionX;
 
         // Handling the top part
-        if (this.top < 100) {
-            this.top = 100;
+        if (this.top < 300) {
+            this.top = 300;
         }
-        else if (this.top >= 100 && this.isJumping){
+        else if (this.top >= 300 && this.isJumping){
             this.gravity +=1;
             this.top += this.gravity;
         }

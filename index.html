@@ -4,31 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jumping Game</title>
+  <link href="https://fonts.cdnfonts.com/css/cyberpunk-is-not-dead" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
         <div id="game-intro">
-          <img src="#" alt="" class="logo-img" />
+          <img src="./docs/images/start-game.png" alt="startGame" class="logo-img" />
           <br />
           <button id="start-button">Start Game</button>
           <br />
+          <img src="./docs/images/keys.gif" alt="" class="arrows-img" />
           <p class="instructions">
-            instructions for game
+            Use directional key for movement. Hold 'Up-key' or 'Space-Bar' to hover for a short time. Avoid the enemies. Good Luck.
           </p>
         </div>
   
-        <div id="game-container">
-          <div>
-            <p>Score: <span id="score">0</span></p>
-            <p>Lives: <span id="lives">3</span></p>
-          </div>
-          <div id="game-screen"></div>
-        </div>
-  
+        
+        <section id="game-screen">
+            <p>Score: <span id="score"> 0</span></p>
+            <p>Lives: <span id="lives"> 3</span></p>
+        </section>
        
         <div id="game-end">
-          <img src="#" alt="gameOver" class="endGame-img" />
+          <img src="./docs/images/endGame.png" alt="gameOver" class="endGame-img" />
           <br />
           <button id="restart-button">Try Again!</button>
         </div>

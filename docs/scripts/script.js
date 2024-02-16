@@ -27,7 +27,8 @@ window.onload = function () {
         const possibleKeyStrokes = [
             'ArrowLeft',
             'ArrowUp',
-            'ArrowRight'
+            'ArrowRight',
+            ' '
         ];
 
         if (possibleKeyStrokes.includes(key)) {
@@ -42,9 +43,12 @@ window.onload = function () {
                         game.player.directionX = 8;
                         break;
                     case 'ArrowUp':
-                        if (game.player.top >= 449){
+                    case ' ':
+                        if(game.player.top >= 449){
                             game.player.jump();
-                        }   
+                            console.log('jump') 
+                            break;
+                        }       
                 }       
             }
         } 
@@ -57,7 +61,8 @@ window.onload = function () {
         const possibleKeyStrokes = [
             'ArrowLeft',
             'ArrowUp',
-            'ArrowRight'
+            'ArrowRight',
+            ' '
         ];
 
         if (possibleKeyStrokes.includes(key)) {
@@ -69,6 +74,7 @@ window.onload = function () {
                         game.player.directionX = 0;
                         break;
                     case 'ArrowUp':
+                    case ' ':
                         game.player.directionY = 0;
                         break;    
                     case 'ArrowRight':

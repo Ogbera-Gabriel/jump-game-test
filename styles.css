@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+    body {
     text-align: center;
     background-color: black;
     color: #fff;
@@ -12,6 +7,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 30px;
   }
   
   #game-intro {
@@ -20,34 +16,23 @@
   
   #game-intro > p {
     text-align: left;
-    font-family: 'Bungee Spice', sans-serif;
+    font-family: 'Cyberpunk Is Not Dead', sans-serif;
+                                                
   }
   
-  #game-container {
-    width: 100vw;
-    padding: 20px 0px;
-    justify-content: center;
-  }
-  #game-container > div {
-    color: #fff;
-    display: flex;
-    font-size: 20px;
-    z-index: 1;
-  }
   .instructions {
     display: flex;
     justify-content: center;
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
+    color: chocolate;
   }
   
-  #game-container p {
-    padding: 0 20px;
-    font-family: 'Bungee Spice', sans-serif;
-  }
+
+
   #game-screen {
-    display: hidden;
+    display: none;
     width: 1280px;
     height: 720px;
     background-image: url(https://i.ibb.co/Hnp59XF/gamescreen-background.png);
@@ -61,6 +46,15 @@
     margin: 0 auto;
     border-radius: 5px;
     flex-direction: row;    
+}
+
+#game-screen p {
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  z-index: 1;
+  font-family: 'Cyberpunk Is Not Dead', sans-serif;
+  padding: 0 20px;
 }
 
 @keyframes slide {
@@ -80,11 +74,13 @@
   
   .game-intro p {
     font-size: 18px;
-    font-family: 'Verdana';
+    font-family: 'Cyberpunk Is Not Dead', sans-serif;
+
   }
   
   .logo-img {
     width: 900px;
+    height: 350px;
     padding: 20px 0;
   }
   
@@ -100,6 +96,7 @@
   body button {
     font-size: 25px;
     background-color: #fff;
+    font-family: 'Cyberpunk Is Not Dead', sans-serif;
     color: black;
     padding: 10px 20px;
     border: 0;
@@ -113,13 +110,5 @@
     color: #fff;
   }
   
-  /* CSS for the bullet */
-  .bullet {
-    position: absolute;
-    width: 5px;
-    height: 100px;
-    background-color: red;
-    border-radius: 100%;
-    z-index: 1; /* higher z-index to make sure the bullet appears above other elements */
-  }
+
   

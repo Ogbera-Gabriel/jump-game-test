@@ -2,14 +2,14 @@ class Enemy {
     constructor(gameScreen, enemyImg) {
         this.gameScreen = gameScreen;
         this.left = 1300;
-        this.top = 500;
+        this.top = 480;
         this.width = 70;
-        this.height = 100;
+        this.height = 135;
         this.ememyImage = enemyImg;
         
         this.element = document.createElement('img');
         
-        this.element.src = './docs/images/enemy.png';
+        this.element.src = './docs/images/robot-enemy.gif';
         this.element.style.position = 'absolute';
         this.element.style.top = `${this.top}px`;
         this.element.style.left = `${this.left}px`;
