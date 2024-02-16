@@ -6,7 +6,8 @@ window.onload = function () {
     let game;
 
 
-
+    
+    introMusic.play()
     startButton.addEventListener('click', function() {
         startGame();
         introMusic.pause();
