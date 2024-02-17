@@ -3,10 +3,6 @@
 ## Description
 Jumping Game is a simple web-based game built with JavaScript and HTML. The game challenges players to navigate through obstacles while collecting points. It features basic controls and an intuitive interface.
 
-## Screenshots
-![Gameplay Screenshot](./docs/images/start-game.png)
-![Game Over Screenshot](./docs/images/endGame.png)
-
 ## How to Play
 1. Press the "Start Game" button to begin.
 2. Use directional keys for movement.
@@ -51,4 +47,4 @@ The `styles.css` file contains styles for the game interface, including layout, 
 This project is licensed under the [MIT License](LICENSE).
 
 ## Preview Link
-
+https://ogbera-gabriel.github.io/jump-game-test/
