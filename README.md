@@ -43,8 +43,5 @@ The `styles.css` file contains styles for the game interface, including layout, 
 - Game Over Music: [GameOver.mp3](./docs/audio/GameOver.mp3)
 - Sound Effects: [Damaged.mp3](./docs/audio/Damaged.mp3)
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 ## Preview Link
 https://ogbera-gabriel.github.io/jump-game-test/
